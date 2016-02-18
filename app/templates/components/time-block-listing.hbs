@@ -1,0 +1,36 @@
+<section class="time-block">
+  {{#paper-toolbar}}
+    <div class="md-toolbar-tools">
+        <h2>{{timeBlock.title}}</h2>
+        <span flex></span>
+        {{!-- <form flex layout="row" layout-align="end center" class="timer-update">
+          {{paper-input label="Time" type="time" value=time}}
+          {{paper-button raised=true type="submit" label="Update"}}
+        </form> --}}
+        <span>{{timeBlock.subtitle}}</span>
+    </div>
+  {{/paper-toolbar}}
+
+  <div layout="row" layout-fill layout-margin>
+    {{#each timeBlock.times as |timeBlockItem|}}
+      {{#paper-card flex=true}}
+        {{#paper-card-content}}
+          <h3>{{timeBlockItem.title}}</h3>
+          <div layout="column">
+              <div flex>
+                  <h4>
+                    {{countdown-timer time=timeBlock.time offset=timeBlockItem.offset}}
+                  </h4>
+              </div>
+              <div flex>
+                  <h4>
+                  {{display-time time=timeBlock.time offset=timeBlockItem.offset format='HH:mm:ss'}}
+                  </h4>
+              </div>
+          </div>
+        {{/paper-card-content}}
+      {{/paper-card}}
+    {{/each}}
+  </div>
+
+</section>
