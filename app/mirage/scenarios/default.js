@@ -197,11 +197,11 @@ export default function(server) {
     minute: 59,
   });
   server.db['time-blocks'].update(brea.id, {'times': [
+    start,
     {
       title: 'START VIDEO 05 - Bunnies',
       offset: 1000 * 60 * 20 - 6000
     },
-    start,
     {
       title: 'End',
       offset: 1000 * 60 * 21
