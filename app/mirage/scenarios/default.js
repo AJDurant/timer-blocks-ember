@@ -59,7 +59,7 @@ export default function(server) {
     start,
     {
       title: 'On Stage',
-      offset: 1000 * 60 * 4
+      offset: 1000 * 60 * 3 + 1000
     },
     {
       title: 'On floor',
