@@ -325,7 +325,7 @@ export default function(server) {
   var sports = server.create('time-block', {
     title: 'Sports President',
     subtitle: 'Peter, Josh',
-    hour: 22,
+    hour: 23,
     minute: 12,
   });
   server.db['time-blocks'].update(sports.id, {'times': [
@@ -354,7 +354,7 @@ export default function(server) {
   var president = server.create('time-block', {
     title: 'President',
     subtitle: 'Alex, (Peter on floor)',
-    hour: 22,
+    hour: 23,
     minute: 28,
   });
   server.db['time-blocks'].update(president.id, {'times': [
