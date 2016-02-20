@@ -193,8 +193,8 @@ export default function(server) {
 
   var brea = server.create('time-block', {
     title: 'BREAK',
-    hour: 22,
-    minute: 9,
+    hour: 21,
+    minute: 59,
   });
   server.db['time-blocks'].update(brea.id, {'times': [
     start,
