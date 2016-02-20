@@ -75,7 +75,7 @@ export default function(server) {
     title: 'Policy Coordinator, Faculty Reps: Arts, Social Science, Science',
     subtitle: 'Alex, Josh',
     hour: 21,
-    minute: 10,
+    minute: 20,
   });
   server.db['time-blocks'].update(policy.id, {'times': [
     start,
@@ -101,7 +101,7 @@ export default function(server) {
     title: 'International, Mature, RAG',
     subtitle: 'Peter, Alex',
     hour: 21,
-    minute: 22,
+    minute: 32,
   });
   server.db['time-blocks'].update(inmarag.id, {'times': [
     start,
@@ -131,7 +131,7 @@ export default function(server) {
     title: 'In Crowd',
     subtitle: 'Josh',
     hour: 21,
-    minute: 33,
+    minute: 43,
   });
   server.db['time-blocks'].update(incrowd.id, {'times': [
     start,
@@ -145,7 +145,7 @@ export default function(server) {
     title: 'E&E and BME',
     subtitle: 'Alex, Peter',
     hour: 21,
-    minute: 35,
+    minute: 45,
   });
   server.db['time-blocks'].update(eebme.id, {'times': [
     start,
@@ -163,7 +163,7 @@ export default function(server) {
     title: 'Volunteering and Disabled',
     subtitle: 'Peter, Josh',
     hour: 21,
-    minute: 45,
+    minute: 55,
   });
   server.db['time-blocks'].update(voldis.id, {'times': [
     start,
@@ -180,8 +180,8 @@ export default function(server) {
   var wolg = server.create('time-block', {
     title: 'Women\'s and LGBTQ',
     subtitle: 'Josh, Peter',
-    hour: 21,
-    minute: 55,
+    hour: 22,
+    minute: 05,
   });
   server.db['time-blocks'].update(wolg.id, {'times': [
     start,
@@ -193,8 +193,8 @@ export default function(server) {
 
   var brea = server.create('time-block', {
     title: 'BREAK',
-    hour: 21,
-    minute: 59,
+    hour: 22,
+    minute: 09,
   });
   server.db['time-blocks'].update(brea.id, {'times': [
     start,
