@@ -181,7 +181,7 @@ export default function(server) {
     title: 'Women\'s and LGBTQ',
     subtitle: 'Josh, Peter',
     hour: 22,
-    minute: 05,
+    minute: 5,
   });
   server.db['time-blocks'].update(wolg.id, {'times': [
     start,
@@ -194,7 +194,7 @@ export default function(server) {
   var brea = server.create('time-block', {
     title: 'BREAK',
     hour: 22,
-    minute: 09,
+    minute: 9,
   });
   server.db['time-blocks'].update(brea.id, {'times': [
     start,
